@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.blockMenu {
+    display: block;
+    color: red;
+}
+.parentsShowTime{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.parentsShowTime:hover{
+    color: red;
+    transition: ease-in-out 0.2s all;
+}
+.container{
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    width: 460px;
+    height: 680px;
+
+    transform: translate(-50%,-50%);
+
+    background-color: #fafafa;
+    box-shadow: 0 2px 8px rgba(0,0,0,.16);
+
+    text-align: center;
+    font-family: 'Nunito',sans-serif;
+
+    border-radius: 30px;
+
+}
+h1{
+    margin: 12px 0;
+}
+.add-elements{
+    margin: 12px 0;
+    
+}
+
+button{
+    padding: 7px 14px;
+    background-color: #00b0ff;
+    border: none;
+    border-radius: 4px;
+    color: #fafafa;
+
+}
+.element-list{
+    height: 450px;
+    overflow-y: scroll;
+}
+ul{
+    padding: 15px;
+   
+}
+li{
+    list-style: none;
+    background-color: #fff;
+
+    padding: 10px 5px;
+    margin: 12px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,.20);
+
+    border-radius: 3px;
+    transition: .4s;
+}
+li:hover{
+    background-color: #e0e0e0;
+}
+
+.checked{
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+}
+.add-elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.add-todo-input{
+    background-color: none;
+    border: 1px solid grey;
+    line-height: 0;
+    font-size: 17px;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border-radius: 60px;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    position: relative;
+}
+.todo {
+    margin-bottom: 1rem;
+  }
+  .completed span {
+    text-decoration: line-through;
+  }
+  
+  .todo label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background: #f3f3f3;
+    padding: 1rem;
+  }
+  
+  .todo i {
+    z-index: 2;
+  }
+  .fonts-todo{
+    font-family: 'Roboto', sans-serif;
+  }
